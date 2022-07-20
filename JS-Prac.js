@@ -66,9 +66,20 @@ function maskify(cc) {
 
 console.log(maskify('a1b2c3d4'));
 
-console.log('test') //071922
 
 
+// Practice understanding THIS 07/20/22
+function foo() {
+  console.log(this);
+};
 
+const bar = {
+  foo: foo
+};
 
-//Now the line is solid
+// Scenario 1:
+foo();
+
+// Scenario 2:
+bar.foo();
+
