@@ -66,4 +66,4 @@ function maskify(cc) {
 
 console.log(maskify('a1b2c3d4'));
 
-//
+console.log('test') //071922
