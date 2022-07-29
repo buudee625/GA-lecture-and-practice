@@ -1,7 +1,11 @@
-const test1 = ["this","is","a","sentence"]
+console.log('JS!')
 
-function sentencify(word) {
-    return word.join(" ")[0].toUpperCase() + word.join(" ").slice(1) + "."
-  }
-
-console.log(sentencify(test1));
+let testBtns = document.querySelectorAll('.unclicked')
+console.log(testBtns);
+for (const i of testBtns) {
+  i.addEventListener('click', function(e){
+    e.target.classList.replace('unclicked', 'clicked');
+    testBtns = document.querySelectorAll('.unclicked');
+    console.log(testBtns);
+});
+}
